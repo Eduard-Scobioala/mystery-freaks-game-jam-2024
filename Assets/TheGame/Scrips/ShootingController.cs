@@ -24,6 +24,7 @@ public class ShootingController : MonoBehaviour
 
     private void Shoot()
     {
+        AudioManager.Instance?.PlaySFX("Fire");
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }

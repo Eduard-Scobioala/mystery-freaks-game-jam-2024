@@ -30,6 +30,7 @@ public class BulletController : MonoBehaviour
 
             if (enemyHealth != null)
             {
+                AudioManager.Instance.PlaySFX("Hit");
                 enemyHealth.health -= damageAmount;
             }
             else

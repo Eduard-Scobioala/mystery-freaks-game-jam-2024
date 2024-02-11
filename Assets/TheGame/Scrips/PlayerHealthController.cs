@@ -25,6 +25,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public void TakeDamange(float damange)
     {
+        AudioManager.Instance.PlaySFX("TakeDmg");
         currentHealth -= damange;
         healthBar.SetValue(currentHealth);
     }
